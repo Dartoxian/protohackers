@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=6080 ts-node-dev --respawn worker.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc --build",
-    "start": "PORT=6080 node dist/worker.js"
+    "start": "node dist/worker.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.6",
